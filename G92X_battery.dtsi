@@ -105,18 +105,19 @@
 					       400 350 300 250 200 150 100
 					       50 0 (-50) (-100) (-150) (-200)>;
 
-		battery,input_current_limit = <1800 0 0 1800 460 900 1000 460 1000 0 820 1900 1800 0 0 400 700 1300 300 1000 1500 0 1667 1000 1667 80 1800 1667 1400 1000 1000>;
-		battery,fast_charging_current = <2100 0 0 2100 460 1200 1000 460 1200 0 1200 1600 2100 0 0 400 700 1300 300 1000 1500 0 2550 1000 2550 80 1800 1000 1400 0 1000>;
-		battery,full_check_current_1st = <275 0 0 275 275 275 275 275 275 0 275 275 275 0 0 275 275 275 275 275 275 0 275 275 275 0 275 275 275 0 275>;
-		battery,full_check_current_2nd = <125 0 0 125 125 125 125 125 125 0 125 125 125 0 0 125 125 125 125 125 125 0 125 125 125 0 125 125 125 0 125>;
-
+		battery,input_current_limit = <1800 0 0 1800 460 900 1000 460 1000 0 820 820 820 1900 1800 0 0 400 700 1300 300 1000 1500 0 1667 1000 1667 80 1800 1667 1400 1000 1000>;
+		battery,fast_charging_current = <2100 0 0 2100 460 1200 1000 460 1200 0 1200 1200 1200 1600 2100 0 0 400 700 1300 300 1000 1500 0 2550 1000 2550 80 1800 1000 1400 0 1000>;
+		battery,full_check_current_1st = <275 0 0 275 275 275 275 275 275 0 275 275 275 275 275 0 0 275 275 275 275 275 275 0 275 275 275 0 275 275 275 0 275>;
+		battery,full_check_current_2nd = <125 0 0 125 125 125 125 125 125 0 125 125 125 125 125 0 0 125 125 125 125 125 125 0 125 125 125 0 125 125 125 0 125>;
+ 
+ 		battery,adc_check_count = <5>;
 		battery,wireless_cc_cv_F = <86>;
 		battery,wireless_cc_cv_E = <90>;
 
 		battery,inbat_voltage = <1>;
 
-		battery,inbat_voltage_table_adc_F = <3120 3101 3061 3038 3001 2956 2920 2887 2856 2814
-						2793 2754 2720 2677 2641 2613 2572 2531 2502 2467 2436>;
+		battery,inbat_voltage_table_adc_F = <2838 2811 2796 2763 2737 2708 2681 2638 2597 2568
+						2549 2524 2506 2483 2434 2403 2365 2337 2316 2287 2271>;
 
 		battery,inbat_voltage_table_adc_E = <3137 3113 3077 3045 3010 2976 2942 2904 2874 2832
 						2794 2763 2723 2693 2660 2623 2589 2552 2517 2481 2464>;
@@ -200,6 +201,10 @@
 		battery,wpc_high_temp = <400>;
 		battery,wpc_high_temp_recovery = <390>;
 		battery,wpc_charging_limit_current = <450>;
+		
+		battery,wpc_delayed_current_en;
+		battery,wpc_delayed_current = <860>;
+		battery,wpc_delayed_current_time = <420>;
 
 		/* SEC_BATTERY_FULL_CONDITION_SOC |
 		   SEC_BATTERY_FULL_CONDITION_NOTIMEFULL |
