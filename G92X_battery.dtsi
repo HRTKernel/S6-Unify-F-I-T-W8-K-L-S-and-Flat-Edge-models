@@ -110,7 +110,6 @@
 		battery,full_check_current_1st = <275 0 0 275 275 275 275 275 275 0 275 275 275 275 275 0 0 275 275 275 275 275 275 0 275 275 275 0 275 275 275 0 275>;
 		battery,full_check_current_2nd = <125 0 0 125 125 125 125 125 125 0 125 125 125 125 125 0 0 125 125 125 125 125 125 0 125 125 125 0 125 125 125 0 125>;
  
- 		battery,adc_check_count = <5>;
 		battery,wireless_cc_cv_F = <86>;
 		battery,wireless_cc_cv_E = <90>;
 
